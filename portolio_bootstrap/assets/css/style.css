@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.say {
+  display: flex;
+  align-items: center;
+}
+
+.emoji {
+  position: relative;
+  animation: emoji 3s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+@keyframes emoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-8deg);
+  }
+  20% {
+    transform: rotate(7deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    padding: 5rem 10%;
+  }
+}
+
+/* section portfolio */
+.portfolio .box {
+  position: relative;
+  background: #eeeeee;
+}
+
+.portfolio .box::after {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #3b82f6;
+}
+
+.portfolio .box .deskripsi {
+  padding: 1rem;
+}
+
+.portfolio .deskripsi h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.portfolio .deskripsi {
+  color: #111;
+}
+
+.portfolio .box .program i {
+  font-size: 3rem;
+}
+
+/* kontak */
+
+.form-kontak {
+  width: 60%;
+  margin: auto;
+}
+
+.form-kontak form {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .form-kontak {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-kontak {
+    width: 100%;
+  }
+}
+
+/* footer */
+.footer-a {
+  width: 100%;
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f5f5;
+}
+
+.footer-a p {
+  margin: 0;
+}
+
+.footer-a .social-media {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-a .social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-a .social-media a:first-child:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: #fff;
+}
+
+.footer-a .social-media a:nth-child(2):hover {
+  background: #36d8ff;
+  color: #fff;
+}
+
+.footer-a .social-media a:nth-child(3):hover {
+  background: #4267b2;
+  color: #fff;
+}
+
+.footer-a .social-media a:last-child:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .footer-a {
+    flex-direction: column;
+  }
+}
+/* 
+body.dark {
+  background-color: #000827;
+} 
+
+body.dark {
+  color: #fff;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #aaa;
+  width: 50px;
+  height: 23px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(27.2px);
+}
+
+.support {
+  position: absolute;
+  right: 21px;
+  bottom: 21px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover {
+  transform: scale(1.1);
+} */
